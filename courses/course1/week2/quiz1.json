@@ -1,0 +1,253 @@
+{
+    "Q1": [
+        "What is an expression in C?",
+        {
+            "A": "A combination of operators and variables",
+            "B": "A statement that ends with a semicolon",
+            "C": "A loop construct",
+            "D": "A conditional statement"
+        },
+        "A"
+    ],
+    "Q2": [
+        "Which type of expression consists of only constant values?",
+        {
+            "A": "Integral expression",
+            "B": "Floating expression",
+            "C": "Relational expression",
+            "D": "Constant expression"
+        },
+        "D"
+    ],
+    "Q3": [
+        "What type of expression produces integer results after implementing all type conversions?",
+        {
+            "A": "Floating expression",
+            "B": "Logical expression",
+            "C": "Integral expression",
+            "D": "Constant expression"
+        },
+        "C"
+    ],
+    "Q4": [
+        "Which type of expression yields results of type bool?",
+        {
+            "A": "Integral expression",
+            "B": "Relational expression",
+            "C": "Floating expression",
+            "D": "Logical expression"
+        },
+        "B"
+    ],
+    "Q5": [
+        "Which concept deals with the evaluation order of an expression?",
+        {
+            "A": "Arithmetic operators",
+            "B": "Relational operators",
+            "C": "Logical operators",
+            "D": "Operator precedence"
+        },
+        "D"
+    ],
+    "Q6": [
+        "Which of the following expressions is an integral expression?",
+        {
+            "A": "10.5 * 5",
+            "B": "x + y - 0.0",
+            "C": "10 / 3",
+            "D": "10 + int(5.0)"
+        },
+        "D"
+    ],
+    "Q7": [
+        "What does the following expression evaluate to? x > y && x < y && x == 10",
+        {
+            "A": "True",
+            "B": "False",
+            "C": "Cannot be determined",
+            "D": "Results in an error"
+        },
+        "B"
+    ],
+    "Q8": [
+        "Which expression represents a constant expression?",
+        {
+            "A": "5 * 2 + 3",
+            "B": "'x' + 5",
+            "C": "10 / 2.5",
+            "D": "10"
+        },
+        "D"
+    ],
+    "Q9": [
+        "In the expression '10 + 20 * 30', which operation is performed first?",
+        {
+            "A": "Addition",
+            "B": "Multiplication",
+            "C": "Both are performed simultaneously",
+            "D": "None of the above"
+        },
+        "B"
+    ],
+    "Q10": [
+        "What is the purpose of operator precedence in C expressions?",
+        {
+            "A": "To determine the order of arithmetic operations",
+            "B": "To assign priority to variable names",
+            "C": "To control the flow of program execution",
+            "D": "To define the size of data types"
+        },
+        "A"
+    ],
+    "Q11":[
+        "Which operator has the highest precedence in C?",
+        {
+            "A":"Assignment operator (=)",
+            "B":"Addition operator (+)",
+            "C":"Logical AND operator (&&)",
+            "D":"Unary minus operator (-)"
+        },
+        "D"
+    ],
+    "Q12":[
+        "In the expression 5 + 3 * 2, what is the result according to precedence rules?",
+        {
+            "A":"16",
+            "B":"11",
+            "C":"10",
+            "D":"13"
+        },
+        "B"
+    ],
+    "Q13":[
+        "What is the precedence of the bitwise AND operator (&) compared to the logical OR operator (||)?",
+        {
+            "A":"Bitwise AND operator has higher precedence",
+            "B":"Logical OR operator has higher precedence",
+            "C":"Both have equal precedence",
+            "D":"Precedence is not defined for these operators"
+        },
+        "A"
+    ],
+    "Q14":[
+        "Which of the following operators has the lowest precedence?",
+        {
+            "A":"Logical OR operator (||)",
+            "B":"Bitwise XOR operator (^)",
+            "C":"Conditional operator (?:)",
+            "D":"Assignment operator (=)"
+        },
+        "C"
+    ],
+    "Q15":[
+        "What is the result of the expression 10 / 2 * 3?",
+        {
+            "A":"30",
+            "B":"15",
+            "C":"5",
+            "D":"6"
+        },
+        "B"
+    ],
+    "Q16":[
+        "Which operator is used to override the default precedence of operators in an expression?",
+        {
+            "A":"Parantheses '()'",
+            "B":"Comma ','",
+            "C":"Colon ':'",
+            "D":"Semicolon ';'"
+        },
+        "A"
+    ],
+    "Q17":[
+        "What is the precedence of the ternary conditional operator (?:) compared to the assignment operator (=)?",
+        {
+            "A":"Ternary conditional operator has higher precedence",
+            "B":"Assignment operator has higher precedence",
+            "C":"Both have equal precedence",
+            "D":"Precedence is not defined for these operators"
+        },
+        "B"
+    ],
+    "Q18":[
+        "What is the result of the expression 6 * 2 / 3?",
+        {
+            "A":" 4",
+            "B":"2",
+            "C":"12",
+            "D":"3"
+        },
+        "A"
+    ],
+    "Q19":[
+        "Which of the following is true regarding the precedence of operators in C?",
+        {
+            "A":"Unary operators have higher precedence than binary operators",
+            "B":"Binary operators have higher precedence than unary operators",
+            "C":"Precedence depends on the specific operator",
+            "D":"Precedence is not defined in C"
+        },
+        "A"
+    ],
+    "Q20":[
+        "In an expression a = b + c * d, which operation will be performed first according to precedence rules",
+        {
+            "A":"Addition(+)",
+            "B":"Multiplication(*)",
+            "C":"Assignment(=)",
+            "D":"It depends on the values of b, c, and d"
+        },
+        "B"
+    ],
+    
+        "Q21": [
+          "What is the result of the expression (3 + 2) * 4?",
+          {
+            "A": "14",
+            "B": "20",
+            "C": "25",
+            "D": "12"
+          },
+          "B"
+        ],
+        "Q22": [
+          "Which of the following has the highest precedence?",
+          {
+            "A": "Logical AND (`&&`)",
+            "B": "Logical OR (`||`)",
+            "C": "Bitwise AND (`&`)",
+            "D": "Bitwise OR (`|`)"
+          },
+          "C"
+        ],
+        "Q23": [
+          "In an expression a = b + c * d, what operation will be performed second according to precedence rules?",
+          {
+            "A": "Multiplication (*)",
+            "B": "Addition (+)",
+            "C": "Assignment (=)",
+            "D": "It depends on the values of b, c, and d"
+          },
+          "B"
+        ],
+        "Q24": [
+          "What is the precedence of the increment (++) and decrement (--) operators compared to arithmetic operators (+, -,*,/)?",
+          {
+            "A": "Increment and decrement operators have higher precedence",
+            "B": "Arithmetic operators have higher precedence",
+            "C": "Both have equal precedence",
+            "D": "Precedence is not defined for these operators"
+          },
+          "A"
+        ],
+        "Q25": [
+          "What is the precedence of the bitwise shift operators (<< and >>) compared to the arithmetic operators (+, -, *, /)?",
+          {
+            "A": "Bitwise shift operators have higher precedence",
+            "B": "Arithmetic operators have higher precedence",
+            "C": "Both have equal precedence",
+            "D": "Precedence is not defined for these operators"
+          },
+          "A"
+        ]
+      }

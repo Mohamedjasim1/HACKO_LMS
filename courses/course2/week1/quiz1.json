@@ -1,0 +1,256 @@
+{
+    "Q1":[
+        "What is a variable in Python?",
+        {
+            "A":"A function",
+            "B":"A reserved keyword",
+            "C":"A name that refers to a value ",
+            "D":"A loop construct"
+        },
+        "C"
+
+    ],
+    "Q2":[
+        "How do you declare and initialize a variable in Python?",
+        {
+            "A":"var x;",
+            "B":"x = 5",
+            "C":"int x = 5",
+            "D":"x := 5"
+        },
+        "B"
+    ],
+    "Q3":[
+        "What are the rules for naming variables in Python?",
+        {
+            "A":"Cannot start with a number, can contain special characters",
+            "B":"Must start with a letter or underscore, can contain letters, numbers, and underscores",
+            "C":"Can start with any character, cannot contain numbers",
+            "D":"Must be all uppercase letters"
+        },
+        "B"
+    ],
+    "Q4":[
+        "How can you check the type of a variable in Python?",
+        {
+            "A":"typeOf(x)",
+            "B":"typeof(x)",
+            "C":"type(x)",
+            "D":"varType(x)"
+        },
+        "C"
+    ],
+    "Q5":[
+        "How do you delete a variable in Python?",
+        {
+            "A":"delete x",
+            "B":"remove(x)",
+            "C":"del x",
+            "D":"clear(x)"
+        },
+        "C"
+    ],
+    "Q6":[
+        "How does variable unpacking work in Python?",
+        {
+        "A":"It breaks a variable into smaller variables",
+        "B":"It combines multiple variables into one",
+        "C":"It assigns values to multiple variables in a single line of code",
+        "D":"It deletes variables from memory"
+        },
+        "A"
+        ],
+    "Q7":[
+        "What are the built-in data types in Python?",
+        {
+            "A":"Integer, Float, String, Boolean, List, Tuple, Dictionary",
+            "B":"Integer, Float, String, Array, Set, Map, Queue",
+            "C":"Number, Text, Array, Map, Set, Tuple, Object",
+            "D":"Variable, Constant, Function, Object, Array, Dictionary, Tuple"
+        },
+        "A"
+    ],
+    "Q8":[
+        "What is the result of 5 + 3.0 in Python?",
+        {
+            "A":"8",
+            "B":"8.0",
+            "C":"TypeError",
+            "D":"SyntaxError"
+        },
+        "B"
+    ],
+    "Q9":[
+        "What is the purpose of using the 'in' keyword with data types like lists and dictionaries in Python?",
+        {
+            "A":"To check if a value exists within the data structure",
+            "B":"To add a value to the data structure",
+            "C":"To remove a value from the data structure",
+            "D":"To iterate over the elements of the data structure"
+        },
+        "A"
+    ],
+    "Q10":[
+        "Which data type is ordered and mutable?",
+        {
+            "A":"List",
+            "B":"Tuple",
+            "C":"Set",
+            "D":"Dictionary"
+        },
+        "A"
+    ],
+    "Q11":[
+        "What is the difference between 'is' and '==' in Python when comparing objects?",
+        {
+            "A":"'is' compares values, '==' compares memory addresses",
+            "B":"'is' checks for object equality, '==' checks for object identity",
+            "C":"'is' checks for object identity, '==' checks for object equality",
+            "D":"'is' compares memory addresses, '==' compares values"
+        },
+        "C"
+    ],
+    "Q12":[
+        "Which data type does not allow duplicate elements?",
+        {
+            "A":"List",
+            "B":"Tuple",
+            "C":"Set",
+            "D":"Dictionary"
+        },
+        "C"
+    ],
+    "Q13":[
+        "What is the operator for exponentiation in Python?",
+        {
+            "A":"^",
+            "B":"**",
+            "C":"^=",
+            "D":"^^"
+        },
+        "B"
+    ],
+    "Q14":[
+        "What will be the result of 10 / 3 in Python?",
+        {
+            "A":"3.3333333333333335",
+            "B":"3.333333333333333",
+            "C":"3",
+            "D":"3.0"
+        },
+        "A"
+    ],
+    "Q15":[
+        "What is the result of 2 ** 3 ** 2 in Python?",
+        {
+            "A":"64",
+            "B":"512",
+            "C":"12",
+            "D":"18"
+        },
+        "B"
+    ],
+    "Q16":[
+        "What is the result of the expression 2 * 3 + 5 / 2 in Python?",
+        {
+            "A":"6.5",
+            "B":"8.5",
+            "C":"8",
+            "D":"9"
+        },
+        "B"
+    ],
+    "Q17":[
+        "What is the output of the expression 5 < 3 or 2 > 5 in Python?",
+        {
+            "A":"True",
+            "B":"False",
+            "C":"None",
+            "D":"SyntaxError"
+        },
+        "B"
+    ],
+    "Q18":[
+        "What is the result of the expression 10 ** -2 in Python?",
+        {
+            "A":"0.01",
+            "B":"0.1",
+            "C":"1",
+            "D":"100"
+        },
+        "A"
+    ],
+    "Q19":[
+        "What is the result of the expression 10 % -3 in Python?",
+        {
+            "A":"1",
+            "B":"-1",
+            "C":"0",
+            "D":"-2"
+        },
+        "B"
+    ],
+    "Q20":[
+        "What is the output of the expression (3 + 5) * 2 / (5 - 3) in Python?",
+        {
+            "A":"8",
+            "B":"4",
+            "C":"16",
+            "D":"None"
+        },
+        "A"
+    ],
+    "Q21":[
+        "What is the output of the expression not(3 > 2) in Python?",
+        {
+            "A":"True",
+            "B":"False",
+            "C":"None",
+            "D":"SyntaxError"
+        },
+        "B"
+    ],
+    "Q22":[
+        "What is the output of the expression 'a' * 3 in Python?",
+        {
+            "A":"'aaa'",
+            "B":"TypeError",
+            "C":"SyntaxError",
+            "D":"None of the above"
+        },
+        "A"
+    ],
+    "Q23":[
+        "What is the output of the expression 5 + 3 * 2 // 6 in Python?",
+        {
+            "A":"2",
+            "B":"3",
+            "C":"4",
+            "D":"6"
+        },
+        "D"
+    ],
+    "Q24":[
+        "What is the output of the expression not(3 > 5) or (2 != 2) in Python?",
+        {
+            "A":"True",
+            "B":"False",
+            "C":"None",
+            "D":"SyntaxError"
+        },
+        "A"
+    ],
+    "Q25":[
+        "What is the result of the expression ((5 + 3) * (2 ** 2)) / (7 - 4) in Python (rounded to two decimal places)?",
+        {
+            "A":"4.00",
+            "B":"6.67",
+            "C":"8.00",
+            "D":"10.67"
+        },
+        "D"
+    ]
+
+    
+
+}

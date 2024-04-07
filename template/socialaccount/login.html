@@ -1,0 +1,38 @@
+{% extends "nav.html" %}
+{% load static %}
+{% comment %} {% extends "socialaccount/base_entrance.html" %} {% endcomment %}
+
+{% load i18n %}
+{% load allauth %}
+{% block pageTitle %}
+    {% trans "Sign In | CodeSpot" %}
+{% endblock pageTitle %}
+{% block mainContent %}
+<div class = "row align-items-center justify-content-center">
+<div class = "col-lg-6">
+<div class="card" style = "min-height: 350px">
+    <div class="card-img img-fluid d-flex justify-content-center">
+        <img src = {% static 'assets/img/google.png' %} height = "80px" width="auto" alt= "Google"/>
+    </div>
+    <div class="card-body">
+        {% if process == "connect" %}
+            <h1 style="text-align: center;" class="card-title">{% blocktrans with provider.name as provider %}Connect {{ provider }}{% endblocktrans %}</h1>
+            <p style="text-align: center; margin-top: 10px;" class="card-text">{% blocktrans with provider.name as provider %}You are about to connect a new third-party account from {{ provider }}.{% endblocktrans %}</p>
+        {% else %}
+            <h1 style="text-align: center; font-size: 24px;" class="card-title">{% blocktrans with provider.name as provider %}Sign In Via {{ provider }}{% endblocktrans %}</h1>
+            <p style="text-align: center; margin-top: 10px;" class="card-text">{% blocktrans with provider.name as provider %}You are about to sign in to <b>CodeSpot</b> from your {{ provider }} Account.{% endblocktrans %}</p>
+        {% endif %}
+        
+        <form method="post" no_visible_fields=True>
+            {% csrf_token %}
+            <div class="actions d-flex align-items-center justify-content-center">
+                <button style="padding: 6px 24px; margin-top: 5px; border-radius: 50px; font-weight: 600;" type="submit" class="btn btn-secondary"><i class="bi bi-google"></i> {% trans "Continue" %} With Google <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </form>
+        <p style="text-align: center; margin-top: 10px;"><sub><i class="bi bi-info-circle"></i> By signing in with Google, you consent to us accessing your Google account information for authentication and service enhancement.</sub></p>
+    </div>
+</div>
+</div>
+</div>
+
+{% endblock mainContent %}

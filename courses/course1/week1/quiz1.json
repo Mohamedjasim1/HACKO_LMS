@@ -1,0 +1,254 @@
+{
+    "Q1": [
+        "What does the 'int' data type represent in C?",
+        {
+            "A": "Integer",
+            "B": "Floating-point number",
+            "C": "Character",
+            "D": "No value"
+        },
+        "A"
+    ],
+    "Q2": [
+        "Which data type is used to store a single character in C?",
+        {
+            "A": "char",
+            "B": "int",
+            "C": "float",
+            "D": "double"
+        },
+        "A"
+    ],
+    "Q3": [
+        "What is the range of the 'int' data type in C (in 16-bit processor)?",
+        {
+            "A": "-32768 to 32767",
+            "B": "-128 to 127",
+            "C": "0 to 255",
+            "D": "1.2E-38 to 3.4E+38"
+        },
+        "A"
+    ],
+    "Q4": [
+        "Which data type in C is used to store decimal and exponential values?",
+        {
+            "A": "int",
+            "B": "char",
+            "C": "float",
+            "D": "double"
+        },
+        "C"
+    ],
+    "Q5": [
+        "What is the size of the 'char' data type in C?",
+        {
+            "A": "1 byte",
+            "B": "2 bytes",
+            "C": "4 bytes",
+            "D": "8 bytes"
+        },
+        "A"
+    ],
+    "Q6": [
+        "Which operator is used to perform logical NOT operation in C?",
+        {
+            "A": "&&",
+            "B": "||",
+            "C": "!",
+            "D": "&"
+        },
+        "C"
+    ],
+    "Q7": [
+        "Which data type is used to represent no value in C?",
+        {
+            "A": "int",
+            "B": "char",
+            "C": "void",
+            "D": "float"
+        },
+        "C"
+    ],
+    "Q8": [
+        "What is the size of the 'double' data type in C?",
+        {
+            "A": "4 bytes",
+            "B": "6 bytes",
+            "C": "8 bytes",
+            "D": "10 bytes"
+        },
+        "C"
+    ],
+    "Q9": [
+        "Which operator is used to perform addition in C?",
+        {
+            "A": "+",
+            "B": "-",
+            "C": "*",
+            "D": "/"
+        },
+        "A"
+    ],
+    "Q10": [
+        "Which data type is used to store true or false values in C?",
+        {
+            "A": "int",
+            "B": "char",
+            "C": "float",
+            "D": "bool"
+        },
+        "D"
+    ],
+    "Q11": [
+        "which is not a assignment operator in c",
+        {
+            "A": "*=",
+            "B": "&=",
+            "C": "&=",
+            "D": "&&"
+        },
+        "D"
+    ],
+    "Q12": [
+        "Which data type in C is used to store decimal numbers with double precision?",
+        {
+            "A": "long double",
+            "B": "double",
+            "C": "float",
+            "D": "None of the above"
+        },
+        "B"
+    ],
+    "Q13": [
+        "What is the result of the expression 5 / 2 in C?",
+        {
+            "A": "2.50",
+            "B": "2",
+            "C": "2.0",
+            "D": "2.5"
+        },
+        "B"
+    ],
+    "Q14": [
+        "What is the purpose of the modulus operator (%) in C?",
+        {
+            "A": "Division",
+            "B": "Multiplication",
+            "C": " Remainder calculation",
+            "D": "Exponentiation"
+        },
+        "C"
+    ],
+    "Q15": [
+        "What is the result of the expression 10 << 2 in C?",
+        {
+            "A": "20",
+            "B": "40",
+            "C": "4",
+            "D": "Error"
+        },
+        "A"
+    ],
+    "Q16": [
+        "Which operator in C is used to compare two values for equality",
+        {
+            "A": ">>>",
+            "B": "=",
+            "C": "==",
+            "D": "=>"
+        },
+        "C"
+    ],
+    "Q17": [
+        "Which data type in C is used to store single-precision floating-point numbers?",
+        {
+            "A": "long double",
+            "B": "double",
+            "C": "float",
+            "D": "None of the above"
+        },
+        "C"
+    ],
+    "Q18": [
+        "What is the size of char datatype?",
+        {
+            "A": "0",
+            "B": "1",
+            "C": "4",
+            "D": "8"
+        },
+        "B"
+    ],
+    "Q19": [
+        "What is the result of the expression 10 % 3 in C?",
+        {
+            "A": "1",
+            "B": "3",
+            "C": "0",
+            "D": "10/3"
+        },
+        "A"
+    ],
+    "Q20": [
+        "Which of the following gives an error when executed",
+        {
+            "A": " int a = 9;",
+            "B": " int a = 2,147,483,650;",
+            "C": " int a = 101010;",
+            "D": " int a = 2,147,483,646;"
+        },
+        "B"
+    ],
+    "Q21": [
+        "Which of the following statement is incorrect",
+        {
+            "A": "A variable name must only contain alphabets, digits, and underscore",
+            "B": "A variable name cannot be a keyword",
+            "C": "A variable name cannot start with an underscore",
+            "D": "No whitespace is allowed within the variable name."
+        },
+        "C"
+    ],
+    "Q22": [
+        "Can datatype be defined by the user?",
+        {
+            "A": "Yes",
+            "B": "No",
+            "C": "cannot be done in c language",
+            "D": "yes, but that datatype cannot be used in the future"
+        },
+        "A"
+    ],
+    "Q23": [
+        "Which of the following is used to specify an integer value",
+        {
+            "A": "%i",
+            "B": "%s",
+            "C": "%int",
+            "D": "%d"
+        },
+        "D"
+    ],
+    "Q24": [
+        "Which of the following cannot be a variable",
+        {
+            "A": "sum1",
+            "B": "_ew",
+            "C": "3sub",
+            "D": "int_1"
+        },
+        "C"
+    ],
+    "Q25": [
+        "Which operator in C is used to determine the size of a variable or data type?",
+        {
+            "A": "*",
+            "B": "sizeof",
+            "C": "#",
+            "D": "%"
+        },
+        "B"
+    ]
+    
+
+}

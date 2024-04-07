@@ -1,0 +1,48 @@
+{% comment %}
+{% extends 'moduleView.html' %}
+{% endcomment %}
+{% load static %}
+
+
+{% block content %}
+<link href={% static "assets/vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
+
+  <div class="container">
+    <div class="row justify-content-center align-items-center vh-100">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center">Sign up</h2>
+            <form method="post" class="login-form"1>
+              {% csrf_token %}
+              {% for field in form %}
+                <div class="form-group">
+                  <label>{{ field.label }}</label>
+                  {{ field }}
+                  {% for error in field.errors %}
+                    <p class="text-danger"><sub>{{ error }}</sub></p>
+                  {% endfor %}
+                </div>
+              {% endfor %}
+			  <div class="d-grid gap-2" style ="margin-top: 20px">
+				<button type="submit" class="btn btn-success btn-block">Sign up</button>
+			  </div>
+			</form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+  </style>
+  <script src={% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}></script>
+{% endblock %}

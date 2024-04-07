@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block mainContent %}
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <p>Hello <b>{% if request.user.is_authenticated %}, {{ request.user.username }}{% endif %}!</b></p>
+    
+    <p>This is our Hackathon project conducted by <B>REVAMP</B>, a LMS platform that's in the exciting phase of development.</p>
+  
+    <p>What sets our site apart?</p>
+    <ul>
+      <li><strong>STUDY COURSE</strong>
+      <li><strong>UPLOAD COURSE</strong> 
+      <li><strong>ATTEND QUIZ</strong> 
+      <li><strong>CREATE COURSE</strong>
+        <br><br><br>
+    
+    <br><br><br>
+
+
+    <p>Thank you for being a part of our journey. Your adventure in knowledge starts now!</p>
+  </div>
+  
+  
+  <footer class=" text-center text-lg-start">
+    
+    <a style="text-decoration: none;" href="https://www.linkedin.com/in/mohamed-jasim-b57802259/"><div class="text-center p-3" style="color: white;">
+        Developed by: 
+        <strong>Team CodeConquerors</strong>
+        
+    </div>
+  </a>
+</footer>
+
+{% endblock %}

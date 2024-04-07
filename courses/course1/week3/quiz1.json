@@ -1,0 +1,253 @@
+{
+    "Q1": [
+        "What is the purpose of the 'if' statement in C?",
+        {
+            "A": "To declare a variable",
+            "B": " To repeat a block of code a certain number of times",
+            "C": "To make a decision based on a condition",
+            "D": " To perform mathematical calculations"
+        },
+        "C"
+    ],
+    "Q2": [
+        "Which of the following operators is used to compare two values in an 'if' statement?",
+        {
+            "A": "&",
+            "B": "|",
+            "C": "==",
+            "D": "++"
+        },
+        "C"
+    ],
+    "Q3": [
+        "What does the else statement do in C?",
+        {
+            "A": "It ends the program execution.",
+            "B": "It starts a new block of code.",
+            "C": "It is used to execute a block of code if the condition in the if statement evaluates to false.",
+            "D": "It is used to create a loop"
+        },
+        "C"
+    ],
+    "Q4": [
+        "It is used to create a loop",
+        {
+            "A": "if (condition) {code block}",
+            "B": "if [condition] {code block}",
+            "C": "if {condition} {code block}",
+            "D": " if /condition/ {code block}"
+        },
+        "A"
+    ],
+    "Q5": [
+        "What does the else if statement allow you to do in C?",
+        {
+            "A": "Create nested loops",
+            "B": "Execute multiple conditions sequentially",
+            "C": "Declare a new variable",
+            "D": " End the program execution"
+        },
+        "B"
+    ],
+    "Q6": [
+        "In a nested 'if' statement, what does the inner 'if' statement depend on?",
+        {
+            "A": "The outer 'if' statement",
+            "B": "The value of a variable declared outside the 'if' statement",
+            "C": " The condition of the outer 'if' statement",
+            "D": " The value of a variable declared inside the inner 'if' statement"
+        },
+        "C"
+    ],
+    "Q7": [
+        "What happens if no condition in an if-else ladder is true?",
+        {
+            "A": "The program crashes",
+            "B": "The else block is executed",
+            "C": "The program exits",
+            "D": " No block of code is executed"
+        },
+        "B"
+    ],
+    "Q8": [
+        "Which statement is used to exit from the entire loop in C?",
+        {
+            "A": " continue",
+            "B": "return",
+            "C": "exit",
+            "D": " break"
+        },
+        "D"
+    ],
+    "Q9": [
+        "Which operator is used for logical AND in C?",
+        {
+            "A": "&",
+            "B": "&&",
+            "C": "||",
+            "D": "!"
+        },
+        "B"
+    ],
+    "Q10": [
+        "What is the primary purpose of the switch statement in C?",
+        {
+            "A": "To execute a block of code repeatedly",
+            "B": "To make a decision based on a condition",
+            "C": "To define a function",
+            "D": "To declare variables"
+        },
+        ""
+    ],
+    "Q11": [
+        "Which data type can be used for the expression inside a 'switch' statement?",
+        {
+            "A": "float",
+            "B": "char",
+            "C": "array",
+            "D": " struct"
+        },
+        "B"
+    ],
+    "Q12": [
+        "In a 'switch' statement, what is compared to the values specified in each case label?",
+        {
+            "A": "The address of the variable",
+            "B": "The value of the expression inside the 'switch'",
+            "C": "The value of the variable",
+            "D": " The index of the variable"
+        },
+        "B"
+    ],
+    "Q13": [
+        "What keyword is used to specify the beginning of a 'switch' statement block in C?",
+        {
+            "A": "start",
+            "B": "switch",
+            "C": "begin",
+            "D": "case"
+        },
+        "B"
+    ],
+    "Q14": [
+        "Which keyword is used to mark the end of a 'case' block in a 'switch' statement?",
+        {
+            "A": "next",
+            "B": "break",
+            "C": "end",
+            "D": "stop"
+        },
+        "B"
+    ],
+    "Q15": [
+        "What happens if the value of the expression in a switch statement does not match any case label?",
+        {
+            "A": "The program crashes",
+            "B": "The 'default' case is executed",
+            "C": "The program exits",
+            "D": "No block of code is executed"
+        },
+        "B"
+    ],
+    "Q16": [
+        "In a 'switch' statement, can 'case' labels have multiple values?",
+        {
+            "A": "Yes",
+            "B": "No",
+            "C": "Sometimes",
+            "D": "only in special cases"
+        },
+        "B"
+    ],
+    "Q17": [
+        "What is the purpose of the 'default' case in a 'switch' statement?",
+        {
+            "A": "It marks the end of the switch statement.",
+            "B": "It specifies the default value of the expression.",
+            "C": "It executes if none of the case labels match the expression.",
+            "D": "It defines a new case for a specific condition."
+        },
+        "C"
+    ],
+    "Q18": [
+        "Which of the following is true about fall-through behavior in a switch statement?",
+        {
+            "A": " It is not allowed in C.",
+            "B": "It allows the program to skip the 'default' case.",
+            "C": "It causes the program to exit the 'switch' statement.",
+            "D": "It allows the flow of execution to continue to the next 'case' block."
+        },
+        "d"
+    ],
+    "Q19": [
+        "Which of the following statements is true about the switch statement in C?",
+        {
+            "A": "It can only compare integers.",
+            "B": "It can compare both integers and characters.",
+            "C": "It can only compare characters.",
+            "D": "It cannot be used for decision-making"
+        },
+        "B"
+    ],
+    "Q20": [
+        "In a switch statement, where should the default case be placed?",
+        {
+            "A": "At the beginning",
+            "B": "At the end",
+            "C": "Anywhere in the switch block",
+            "D": "Before any 'case' label"
+        },
+        "A"
+    ],
+    "Q21": [
+        "What is the primary advantage of using a switch statement over multiple if-else statements?",
+        {
+            "A": "switch statements offer better readability.",
+            "B": "switch statements are more efficient in terms of execution time.",
+            "C": "switch statements can handle more complex conditions.",
+            "D": "switch statements allow for easier debugging."
+        },
+        "B"
+    ],
+    "Q22": [
+        "int x = 5, y = 10;int result = (x > y) ? x : y;",
+        {
+            "A": "5",
+            "B": "10",
+            "C": "15",
+            "D": "It will cause a compilation error."
+        },
+        "B"
+    ],
+    "Q23": [
+        " In C, which conditional statement allows you to execute a block of code repeatedly as long as a condition is true?",
+        {
+            "A": "if",
+            "B": "switch",
+            "C": "else",
+            "D": "do while"
+        },
+        ""
+    ],
+    "Q24": [
+        "What is the purpose of the ternary conditional operator in C?  ",
+        {
+            "A": "To compare two values",
+            "B": "To perform arithmetic operations",
+            "C": "To make decisions based on conditions",
+            "D": " To define functions"
+        },
+        "C"
+    ],
+    "Q25": [
+        "Which operator is used for logical OR in C?",
+        {
+            "A": "&&",
+            "B": "!",
+            "C": "||",
+            "D": "|"
+        },
+        "C"
+    ]
+
+}

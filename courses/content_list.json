@@ -1,0 +1,344 @@
+{
+    "course_count": 2,
+    "courses": {
+        "course1": {
+            "course_num": 1,
+            "name": "C Language",
+            "description": "Learn the fundamentals of C language with course, designed to equip you with essential programming skills. Master the syntax and principles of C programming, laying a strong foundation for advanced software development.",
+            "work_in_progress": 0,
+            "pec_verified": 1,
+            "week_count": 3,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "Datatypes, Variables, Operators",
+                    "material_count": 3,
+                    "quiz_count": 1,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "Datatypes"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "Variables"
+                        },
+                        "text3": {
+                            "material_num": 3,
+                            "name": "Operators"
+                        }
+                    },
+                    "quizzes": {
+                        "quiz1": {
+                            "quiz_num": 1,
+                            "name": "WeekEnd Quiz"
+                        }
+                    }
+                },
+                "week2": {
+                    "week_num": 2,
+                    "name": "Expression, Operator Precedence",
+                    "material_count": 2,
+                    "quiz_count": 1,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "Expression"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "Operator Precedence"
+                        }
+                    },
+                    "quizzes": {
+                        "quiz1": {
+                            "quiz_num": 1,
+                            "name": "WeekEnd Quiz"
+                        }
+                    }
+                },
+                "week3": {
+                    "week_num": 3,
+                    "name": "Conditional & Switch Statements",
+                    "material_count": 2,
+                    "quiz_count": 1,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "Conditional Statements"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "Switch Statements"
+                        }
+                    },
+                    "quizzes": {
+                        "quiz1": {
+                            "quiz_num": 1,
+                            "name": "WeekEnd Quiz"
+                        }
+                    }
+                }
+            }
+        },
+        "course2": {
+            "course_num": 2,
+            "name": "Python",
+            "description": "Learn the fundamentals of Python language with course, designed to equip you with essential programming skills. Master the syntax and principles of Python programming, laying a strong foundation for advanced software development.",
+            "work_in_progress": 0,
+            "pec_verified": 0,
+            "week_count": 2,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "Intro, Variables, Datatypes, Operators, Expressions",
+                    "material_count": 3,
+                    "quiz_count": 1,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "Introduction and Variables"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "Datatypes"
+                        },
+                        "text3": {
+                            "material_num": 3,
+                            "name": "Operators & Expressions"
+                        }
+                    },
+                    "quizzes": {
+                        "quiz1": {
+                            "quiz_num": 1,
+                            "name": "WeekEnd Quiz"
+                        }
+                    }
+                },
+                "week2": {
+                    "week_num": 2,
+                    "name": "Conditional & Looping Statements",
+                    "material_count": 2,
+                    "quiz_count": 1,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "Conditional Statements"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "Looping Statements"
+                        }
+                    },
+                    "quizzes": {
+                        "quiz1": {
+                            "quiz_num": 1,
+                            "name": "WeekEnd Quiz"
+                        }
+                    }
+                }
+            }
+        },
+        "course3": {
+            "course_num": 3,
+            "name": "Java",
+            "description": "Learn the fundamentals of Java language with course, designed to equip you with essential programming skills. Master the syntax and principles of Java programming, laying a strong foundation for advanced software development.",
+            "work_in_progress": 0,
+            "pec_verified": 1
+        },
+        "course4": {
+            "course_num": 4,
+            "name": "javascript",
+            "description": "learn js",
+            "work_in_progress": 1,
+            "pec_verified": 0,
+            "week_count": 1,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "basic",
+                    "material_count": 3,
+                    "quiz_count": 0,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "intro"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "basic"
+                        },
+                        "text3": {
+                            "material_num": 3,
+                            "name": "variable"
+                        }
+                    },
+                    "quizzes": {}
+                }
+            }
+        },
+        "course5": {
+            "course_num": 5,
+            "name": "html",
+            "description": "learn html along with css and js for just 99rs",
+            "work_in_progress": 0,
+            "pec_verified": 1,
+            "week_count": 1,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "beginners",
+                    "material_count": 4,
+                    "quiz_count": 0,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "intro"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "tags"
+                        },
+                        "text3": {
+                            "material_num": 3,
+                            "name": "forms"
+                        },
+                        "text4": {
+                            "material_num": 4,
+                            "name": "head"
+                        }
+                    },
+                    "quizzes": {}
+                }
+            }
+        },
+        "course6": {
+            "course_num": 6,
+            "name": "html",
+            "description": "learn html along with css and js for just 99rs",
+            "work_in_progress": 0,
+            "pec_verified": 1,
+            "week_count": 1,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "basic",
+                    "material_count": 2,
+                    "quiz_count": 0,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "intro"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "tags"
+                        }
+                    },
+                    "quizzes": {}
+                }
+            }
+        },
+        "course7": {
+            "course_num": 7,
+            "name": "javascript",
+            "description": "DRYTYT",
+            "work_in_progress": 0,
+            "pec_verified": 1,
+            "week_count": 1,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "basic",
+                    "material_count": 3,
+                    "quiz_count": 0,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "intro"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "basic"
+                        },
+                        "text3": {
+                            "material_num": 3,
+                            "name": "variable"
+                        }
+                    },
+                    "quizzes": {}
+                }
+            }
+        },
+        "course8": {
+            "course_num": 8,
+            "name": "PHP",
+            "description": "HFDRTU",
+            "work_in_progress": 0,
+            "pec_verified": 1,
+            "week_count": 1,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "FFFTK",
+                    "material_count": 4,
+                    "quiz_count": 0,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "INTRO"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "Vsrt"
+                        },
+                        "text3": {
+                            "material_num": 3,
+                            "name": "fuky"
+                        },
+                        "text4": {
+                            "material_num": 4,
+                            "name": "hhjf"
+                        }
+                    },
+                    "quizzes": {}
+                }
+            }
+        },
+        "course9": {
+            "course_num": 9,
+            "name": "JS",
+            "description": "ASDA",
+            "work_in_progress": 0,
+            "pec_verified": 1,
+            "week_count": 1,
+            "weeks": {
+                "week1": {
+                    "week_num": 1,
+                    "name": "srA",
+                    "material_count": 4,
+                    "quiz_count": 0,
+                    "materials": {
+                        "text1": {
+                            "material_num": 1,
+                            "name": "AS"
+                        },
+                        "text2": {
+                            "material_num": 2,
+                            "name": "JF"
+                        },
+                        "text3": {
+                            "material_num": 3,
+                            "name": "FY"
+                        },
+                        "text4": {
+                            "material_num": 4,
+                            "name": "U"
+                        }
+                    },
+                    "quizzes": {}
+                }
+            }
+        }
+    }
+}

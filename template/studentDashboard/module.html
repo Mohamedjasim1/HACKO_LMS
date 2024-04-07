@@ -1,0 +1,173 @@
+{% extends "moduleView.html" %}
+
+
+{% block pageTitle %}
+
+    Module | CodeSpot
+
+{% endblock pageTitle %}
+
+
+{% block studentName %}
+
+{{ profile.name}}
+
+{% endblock studentName %}
+
+
+{% block studentName1 %}
+
+{{ profile.name}}
+
+{% endblock studentName1 %}
+
+
+{% block studentClass %}
+
+{{ profile.student_department}} {{ profile.section}}
+
+{% endblock studentClass %}
+
+
+{% block coursenavigation %}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href={% url 'show_courses' %}>Home</a></li>
+    <li class="breadcrumb-item active"><a href={% url 'view_course' course %}>{{ course_name }}</a></li>
+    <li class="breadcrumb-item active"><a href={% url 'module' course week material %}>{{ week }} > {{ material }}</a></li>
+</ol>
+
+{% endblock coursenavigation %}
+
+
+{% block mainContent %}
+
+<div class="row d-flex align-items-center justify-content-center">
+    <div class="col-lg-11">
+        <div class="card position-relative" style="margin-top: 30px;">
+            <div class="scroll-watcher"></div>
+            <div class="card-body">
+                {{context | safe}}
+            </div>
+            
+        </div>
+        <div class="text-center" style="margin-top: 30px;">
+            {% comment %} <a class="btn btn-secondary mx-auto" href= {% url 'assessment' course week quiz_no %} >Take Assessment</a> {% endcomment %}
+            
+            
+            {% if is_last_material %}
+                <a class="btn btn-success mx-auto" href= {% url 'assessment' course week quiz_no %} >Take Assessment</a>
+            {% else %}
+                <a class="btn btn-success mx-auto" href= {% url 'module' course week next_material_num %} >Next</a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+
+  <!-- <div id="mad" mad= {% url 'module' course week material %} ></div> -->
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var flag = 0;
+      var bodyheight = document.body.scrollHeight;
+      //var container = window.scrollY;
+      function bot() {
+        if (flag == 0) {
+          var container = window.scrollY;
+          if (container >= bodyheight - window.innerHeight) {
+            console.log("Material completed.");
+            flag = 1;
+            //fetch( document.getElementById("mad").mad )
+            /*fetch('', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                data: 'hi',
+              })
+            })
+            .then(console.log("MAD BOT"))*/
+            submitFormData();
+          }
+        } else {
+          console.log("Already request sent !!");
+        }
+      }
+      window.addEventListener('scroll', bot);
+    });
+
+
+    /*$.ajax({
+        type: "GET",
+        url: void(0),
+        data: {
+            "data": 'MAD hi',
+        },
+        dataType: "json",
+        success: function (data) {
+            // any process in data
+            alert("successfull")
+        },
+        failure: function () {
+            alert("failure");
+        }
+    });*/
+
+    const BASE_URL = '{{ request.scheme }}://{{ request.get_host }}/';
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    let global_data = { name: "John", age: 31, code: "IN414", data: 'MAD hi' };
+
+    let submitFormData = () =>
+    {
+        const API_URL = BASE_URL + "studentDashboard/materialcompleted/{{ course }}/{{ week }}/{{ material }}/";
+
+        const request = new Request(
+            API_URL,
+            { headers: { 'X-CSRFToken': csrftoken } }
+        );
+
+        return fetch(request, {
+                method: 'POST',
+                mode: 'same-origin',
+                body: JSON.stringify(global_data) })
+        /*.then(response => response.json())
+        .then(response =>
+            {
+                data = response['time']; return data;
+            });*/
+    }
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+{% endblock mainContent %}
+
+
+{% comment %}
+{%block scriptContent %}
+
+{%endblock scriptContent %}
+{% endcomment %}

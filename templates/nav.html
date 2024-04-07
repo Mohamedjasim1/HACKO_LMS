@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% block pageTitle %}{% endblock pageTitle %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta name="google-signin-client_id" content="287746956817-h15nah1fu4o9ble4ml4pte78423k06qt.apps.googleusercontent.com">
+
+    <!-- SIGN IN WITH GOOGLE -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <!-- Favicons -->
+  <link href={% static "assets/img/cs_logo.jpg" %} rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href={% static "assets/vendor/bootstrap/css/bootstrap.min.css" %} rel="stylesheet">
+  <link href={% static "assets/vendor/bootstrap-icons/bootstrap-icons.css" %} rel="stylesheet">
+  <link href={% static "assets/vendor/boxicons/css/boxicons.min.css" %} rel="stylesheet">
+  <link href={% static "assets/vendor/quill/quill.snow.css" %} rel="stylesheet">
+  <link href={% static "assets/vendor/quill/quill.bubble.css" %} rel="stylesheet">
+  <link href={% static "assets/vendor/remixicon/remixicon.css" %} rel="stylesheet">
+  <link href={% static "assets/vendor/simple-datatables/style.css" %} rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href={% static "assets/css/style.css" %} rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column justify-content-between"  style = "min-height: 100vh;">
+
+<header id="header" class="header w-100 fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="#" class="logo d-flex align-items-center">
+            <!-- <img src={% static 'assets/img/cs_logo.jpg' %} style="width:50px;" alt="cs_logo.jpg"> -->
+            <span class="logo-text">CodeSpot | Panimalar</span>
+        </a>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+            {% comment %} <li class="nav-item dropdown pe-3">
+                <a class="nav-link nav-profile d-flex align-items-center pe-0" href= {% url 'google_login' %} data-bs-toggle="dropdown">
+                    <button class="btn signin btn-success" style = "font-weight: 600; border-radius: 50px;">&nbsp;&nbsp;Sign In&nbsp;&nbsp;</button>
+                </a>
+            </li><!-- End Profile Nav --> {% endcomment %}
+        </ul>
+    </nav><!-- End Icons Navigation -->
+
+</header>
+
+<section style="margin-top: 150px; margin-bottom: 50px; padding: 10px 60px;" class="d-flex flex-column">
+    {% block mainContent %}{% endblock mainContent %}
+</section>
+
+<footer id="footer" class="footer fixed-bottom bg-white w-100" style = "margin-top: auto;">
+  <div class = 'd-flex justify-content-between'>
+    <div>
+  <!-- <img id="clg" style = "margin-left: 20px"  class="img-fluid" width="50px" height="50px" src={% static 'assets/img/pec-logo.png' %} alt="Coders Forum Logo"> -->
+  <a style = "margin-left: 15px; color: #444444; font-weight: 550;" >Version 1.1.0  </a>
+
+  </div>
+   
+    <div class="credits">
+      Designed and Developed by <strong><a target = '_blank' href="https://codersforum.netlify.app/">Coders Forum</a></strong><br>
+      Department of Computer Science and Engineering 
+      <!-- <br>Version 1.1  -->
+    </div>
+    <div>
+        <a style = "margin-right: 30px;  padding-bottom: 20px; font-weight: 550;" target = '_blank'  href="#">About</a>
+    <!-- <img id="clg" style = "margin-right: 20px"  class="img-fluid" width="50px" height="50px" src={% static 'assets/img/cf-logo.png' %} alt="Coders Forum Logo"> -->
+    </div>
+  </div>
+</footer>
+
+
+<!-- Vendor JS Files -->
+<script src={% static "assets/vendor/apexcharts/apexcharts.min.js" %}></script>
+<script src={% static "assets/vendor/bootstrap/js/bootstrap.bundle.min.js" %}></script>
+<script src={% static "assets/vendor/chart.js/chart.umd.js" %}></script>
+<script src={% static "assets/vendor/echarts/echarts.min.js" %}></script>
+<script src={% static "assets/vendor/quill/quill.min.js" %}></script>
+<script src={% static "assets/vendor/simple-datatables/simple-datatables.js" %}></script>
+<script src={% static "assets/vendor/tinymce/tinymce.min.js" %}></script>
+
+
+<!-- Template Main JS File -->
+<script src={% static "assets/js/main.js" %}></script>
+
+<script src={% static "assets/js/signInGoogle.js" %} defer type = 'module'></script>
+
+
+</body>
+</html>
+
+
+
+   

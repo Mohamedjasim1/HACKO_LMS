@@ -1,0 +1,254 @@
+{
+    "Q1":[
+        "What is a conditional statement in Python?",
+        {
+            "A":"A statement that evaluates to True or False",
+            "B":"A statement that performs arithmetic operations",
+            "C":"A statement that defines a loop",
+            "D":"A statement that imports modules"
+        },
+        "A"
+    ],
+    "Q2":[
+        "What is correct syntax of if",
+        {
+            "A":"if:",
+            "B":"if(condition):",
+            "C":"if:(condition)",
+            "D":"None of the above"
+        },
+        "B"
+    ],
+    "Q3":[
+        "What is correct syntax of else",
+        {
+            "A":"else:",
+            "B":"else(condition):",
+            "C":"else:(condition)",
+            "D":"None of the above"
+        },
+        "A"
+    ],
+    "Q4":[
+        "Consider a=5,what will be the value of a at the end of the code snippet if(a==5):a=3 else:a=2",
+        {
+            "A":"2",
+            "B":"2,3",
+            "C":"3",
+            "D":"5"
+        },
+        "C"
+    ],
+    "Q5":[
+        "Consider a=5,what will be the value of a at the end of the code snippet if(a==5):a=3 elif(a>0):a=2",
+        {
+            "A":"2",
+            "B":"2,3",
+            "C":"3",
+            "D":"5"
+        },
+        "C"
+    ],
+    
+    "Q6":[
+        "What will be the result of the expression 10 == 10.0 in Python?",
+        {
+            "A":"True",
+            "B":"False",
+            "C":"None",
+            "D":"TypeError"
+        },
+        "A"
+    ],
+    "Q7":[
+        "Consider a=5,what will be the value of a at the end of the code snippet if(a==5):a=3 if(a>0):a=2",
+        {
+            "A":"2",
+            "B":"2,3",
+            "C":"3",
+            "D":"5"
+        },
+        "A"
+    ],
+    
+    "Q8":[
+        "Consider a=5,what will be the value of a at the end of the code snippet if(a!=5):a=3 if(a<0):a=2 else:a=4",
+        {
+            "A":"2",
+            "B":"4",
+            "C":"3",
+            "D":"9"
+        },
+        "B"
+    ],
+    "Q9":[
+        "What is the result of the expression 5 != '5' in Python?",
+        {
+            "A":"True",
+            "B":"False",
+            "C":"None",
+            "D":"TypeError"
+        },
+        "A"
+    ],
+    "Q10":[
+        "What is correct syntax of elif",
+        {
+            "A":"elif:",
+            "B":"elif:(condition)",
+            "C":"elif(condition):",
+            "D":"None of the above"
+        },
+        "C"
+    ],
+    "Q11":[
+    "Consider a code where there is only if and elif,will the code be executed successfully",
+    {
+        "A":"no,because of SyntaxError",
+        "B":"no,because of IndexError",
+        "C":"yes,the code can be executed successfully",
+        "D":"no,because of NameError"
+    },
+    "C"
+    ],
+    "Q12":[
+        "Can we use the keyword else if in python, if not what is the alternative keyword for that?",
+    {
+        "A":"yes, we can use else if keyword",
+        "B":"no,we should use elif instead of else if",
+        "C":"no,we should use if else instead of else if",
+        "D":"no,we should use else if instead of else if"
+    },
+    "B"
+    ],
+    "Q13":[
+        "Which is the correct syntax for range()",
+        {
+            "A":"range(start,step,stop)",
+            "B":"range(step,start,stop)",
+            "C":"range(start,stop,step)",
+            "D":"range(stop,start,step)"
+        },
+        "C"
+    ],
+    "Q14":[
+        "Consider a code where there is no step value.Will the code be executed or there will be any error",
+        {
+            "A":"no,because of SyntaxError",
+            "B":"no,because of IndexError",
+            "C":"yes,the code can be executed successfully",
+            "D":"no,because of NameError"
+    },
+    "C"
+    ],
+    "Q15":[
+        "What is the default value of step in range?",
+        {
+            "A":"0",
+            "B":"1",
+            "C":"-1",
+            "D":"2"
+        },
+        "B"
+    ],
+    "Q16": [
+        "What is the syntax for a for loop in Python?",
+        {
+          "A": "for (i = 0; i < n; i++)",
+          "B": "for i = 1 to n",
+          "C": "for i in range(n):",
+          "D": "for (int i = 0; i < n; i++)"
+        },
+        "C"
+      ],
+      "Q17": [
+        "Which loop is used when the number of iterations is known?",
+        {
+          "A": "for loop",
+          "B": "while loop",
+          "C": "do-while loop",
+          "D": "Any of the above"
+        },
+        "A"
+      ],
+      "Q18": [
+        "What is the purpose of a while loop?",
+        {
+          "A": "To iterate through a sequence",
+          "B": "To execute a block of code repeatedly as long as a condition is true",
+          "C": "To execute a block of code once",
+          "D": "To loop through a finite set of elements"
+        },
+        "B"
+      ],
+      "Q19": [
+        "Which loop is not directly available in Python?",
+        {
+          "A": "for loop",
+          "B": "while loop",
+          "C": "do-while loop",
+          "D": "All of the above"
+        },
+        "C"
+      ],
+      "Q20": [
+        "How is a do-while loop implemented in Python?",
+        {
+          "A": "do { } while(condition);",
+          "B": "while { } do(condition);",
+          "C": "do { } while condition;",
+          "D": "There is no direct implementation of a do-while loop in Python"
+        },
+        "D"
+      ],
+      "Q21": [
+        "What is the purpose of the continue statement in a loop?",
+        {
+          "A": "To terminate the loop",
+          "B": "To skip the remaining code inside the loop for the current iteration and proceed to the next iteration",
+          "C": "To restart the loop from the beginning",
+          "D": "To pause the execution of the loop"
+        },
+        "B"
+      ],
+      "Q22": [
+        "What does the range function return?",
+        {
+          "A": "A list of numbers",
+          "B": "A tuple of numbers",
+          "C": "An iterator",
+          "D": "A dictionary"
+        },
+        "C"
+      ],
+      "Q23": [
+        "What is the purpose of the break statement in a loop?",
+        {
+          "A": "To terminate the loop",
+          "B": "To skip the remaining code inside the loop for the current iteration and proceed to the next iteration",
+          "C": "To restart the loop from the beginning",
+          "D": "To pause the execution of the loop"
+        },
+        "A"
+      ],
+      "Q24":[
+        "What is the output of the code?print(list(range(3)))",
+        {
+            "A":"[1,2,3]",
+            "B":"[0,1,2,3]",
+            "C":"[0,1,2]",
+            "D":"[3]"
+        },
+        "C"
+      ],
+        "Q25":[
+         "How many times will the loop iterate in a for loop with the range(3) in Python?",
+        "options", {
+          "A": "0",
+          "B": "1",
+          "C": "2",
+          "D": "3"
+        },
+        "D"
+    ]
+}

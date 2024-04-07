@@ -1,0 +1,106 @@
+{% extends "moduleView.html" %}
+
+
+
+
+{% block pageTitle %}
+
+    Course | CodeSpot
+
+{% endblock pageTitle %}
+
+
+{% block studentName %}
+
+{{ profile.name}}
+
+{% endblock studentName %}
+
+
+{% block studentName1 %}
+
+{{ profile.name}}
+
+{% endblock studentName1 %}
+
+
+{% block studentClass %}
+
+ {{ profile.student_department}} {{ profile.section}}
+
+{% endblock studentClass %}
+
+
+{% block coursenavigation %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href={% url 'show_courses' %}>Home</a></li>
+  <li class="breadcrumb-item active"><a href={% url 'view_course' course_details.course_num %}>{{ course_details.name }}</a></li>
+</ol>
+
+{% endblock coursenavigation %}
+
+
+{% block mainContent %}
+
+<h2 style="padding: 0px 30px; padding-bottom: 20px;"> {{course_details.name}} </h2>
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+
+  {% for w_key, w_value in course_details.weeks.items %}
+
+    <div class="accordion-item">
+      <h1 class="accordion-header" id="flush-heading{{ w_value.week_num }}">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ w_value.week_num }}" aria-expanded="false" aria-controls="flush-collapse{{ w_value.week_num }}" style="display: flex; align-items: center;">
+            <div>
+              <h1 class="card-title">Week {{ w_value.week_num }} : {{ w_value.name }}</h1>
+            </div>
+              <span style="flex-grow: 1;"></span>
+
+
+
+
+              <!-- HARIHARAN CODE: Circular Progress with %
+              <div class="pro-bar">
+                <div class="inner-circle" id="prog-bar">
+                  <div class="d-flex justify-content-center align-items-center position-relative z">
+                    <b class="score" id="score">{{ marks.week1 }}</b>
+                    <span>%</span>
+                  </div>
+                </div>
+              </div>
+              -->
+
+
+
+
+          </button>
+      </h1>  
+      <div id="flush-collapse{{ w_value.week_num }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ w_value.week_num }}" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+
+            {% for m_key, m_value in w_value.materials.items %}
+
+              <div class="d-flex align-items-center justify-content-between" style="padding-left:40px">
+                <a class="text-dark text-start" href="{% url 'module' course_details.course_num w_value.week_num m_value.material_num %}" style="width: 100%; font-size: 1.0rem;">
+                  <i class="bi bi-book-half me-2 text-primary"></i>
+                  {{ m_value.name }}
+                </a>
+
+                
+
+                   
+              </div>
+              <hr>
+
+            {% endfor %}
+
+            
+          </div>
+      </div>
+    </div>
+
+  {% endfor %}
+
+
+{% endblock mainContent %}

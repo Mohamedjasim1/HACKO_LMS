@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block mainContent %}
+<div class="container mt-5 mb-5">
+<div class="row">
+  <h1 class="text-center">Leaderboard</h1>
+</div>
+</br></br>
+<div class="row">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Rank</th>
+      <th scope="col">Name</th>
+      <th scope="col">Got</th>
+      <th scope="col">Total Questions</th>
+      <th scope="col">Total Marks</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for result in results %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{ result.name }}</td>
+      <td>{{ result.got }}</td>
+      <td>{{ result.total }}</td>
+      <td>{{ result.got }}/{{ result.total }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+</div>
+
+<div style="margin-top: 230px;margin-left: 830px;">
+  <div style="display: flex;align-items:center;justify-content: center;">
+    <a href="{% url 'module' %}"><button type="submit" class="btn btn-primary w-80">Back</button></a>
+  </div>
+  </div>
+{% endblock %}

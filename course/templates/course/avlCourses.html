@@ -1,0 +1,91 @@
+{% extends "moduleView.html" %}
+{% load static %}
+
+{% block pageTitle %}
+
+    Available Courses | CodeSpot
+
+{% endblock pageTitle %}
+
+
+{% block studentName %}
+
+{{ profile.name}}
+
+{% endblock studentName %}
+
+
+{% block studentName1 %}
+
+{{ profile.name}}
+
+{% endblock studentName1 %}
+
+
+{% block studentClass %}
+
+{{ profile.student_department}} {{ profile.section}}
+
+{% endblock studentClass %}
+
+
+{% block coursenavigation %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href={% url 'show_courses' %}>Home</a></li>
+</ol>
+
+{% endblock coursenavigation %}
+
+{% block mainContent %}
+
+<div class="container">
+  <div class="row">
+    <!-- C-program card -->
+
+      {% for key, value in catalog.courses.items %}  
+
+      <div class="col-lg-6">
+
+          {% if not value.work_in_progress %}
+
+            <a href={% url 'view_course' value.course_num %}>
+
+          {% endif %}
+
+            <div class="card mb-3">
+              <div class="card-body">
+                <h2>{{ value.name }}</h2>
+                <p class="pt-2">{{ value.description }}</p>
+
+                {% if value.pec_verified %}
+
+                <b><i style="color:  rgb(100, 192, 14);" class="bi bi-check-circle-fill"> PEC verified </i></b><h3></h3>
+                
+                {% endif %}
+
+                {% if value.work_in_progress %}
+
+                <b><i style="color: rgb(249, 203, 87); margin-top: 30px;" class="bi bi-exclamation-triangle-fill"> Work in Progress</i></b>
+              
+                {% endif %}
+
+              </div>
+            </div>
+
+
+          {% if not value.work_in_progress %}
+
+            </a>
+
+          {% endif %}
+ 
+        </div> 
+
+      {% endfor %}
+      
+  </div>
+</div>
+
+
+{% endblock mainContent %}

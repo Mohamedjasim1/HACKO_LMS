@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block mainContent %}
+<div class="container mt-5 mb-5">
+<form method="post" action="{% url 'add_course' %}">
+  {% csrf_token %}
+  <h1 class="text-center">
+    Add Course
+  </h1>
+  <br><br>
+  <label for="InputQuestion{{ i }}" class="form-label">
+      Course Name
+  </label>
+  <input type="text" class="form-control" id="c_name" name="c_name"   placeholder="Name Of The course" required autofocus>
+
+  <br>
+  <label for="InputQuestion{{ i }}" class="form-label">
+      Course Description
+  </label>
+
+  <input type="textarea" name="des" style="width: 100%;height: 70px;" required autofocus>
+
+  <br>
+  <br>
+
+
+  <label for="InputQuestion{{ i }}" class="form-label">
+    Week Name
+</label>
+<input type="text" class="form-control" id="w_name" name="w_name"   placeholder="week topics" required autofocus>
+<br>
+
+<label for="InputQuestion{{ i }}" class="form-label">
+  Topics
+</label>
+<input type="text" class="form-control" id="w_name" name="topic"   placeholder="type all topics seperated by comma " required autofocus>
+<br>
+  <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+
+
+  
+{% endblock %}

@@ -1,0 +1,106 @@
+{
+    "1": {
+        "creator": "anonymous@example.com",
+        "name": "python quiz",
+        "seconds": 30,
+        "quizzes": [
+            {
+                "quiz": "how many types of functions in Python?",
+                "options": [
+                    "3",
+                    "2",
+                    "4",
+                    "1"
+                ],
+                "correct": "C"
+            },
+            {
+                "quiz": "which type of function is used in DP?",
+                "options": [
+                    "lamda",
+                    "recursive function",
+                    "build in ",
+                    "user defined"
+                ],
+                "correct": "B"
+            }
+        ]
+    },
+    "2": {
+        "creator": "hazana",
+        "name": "sample",
+        "seconds": 60,
+        "quizzes": [
+            {
+                "quiz": "whats your name",
+                "options": [
+                    "jazziw",
+                    "jasss",
+                    "hazzu",
+                    "jaziie"
+                ],
+                "correct": "A"
+            },
+            {
+                "quiz": "whats your fav food??",
+                "options": [
+                    "bla bla",
+                    "biriyaanni",
+                    "shawarma",
+                    "her"
+                ],
+                "correct": "D"
+            },
+            {
+                "quiz": "ew",
+                "options": [
+                    "wre",
+                    "w4",
+                    "tw4",
+                    "t4r"
+                ],
+                "correct": "A"
+            },
+            {
+                "quiz": "ewerw",
+                "options": [
+                    "qewa",
+                    "qr",
+                    "qr",
+                    "qr"
+                ],
+                "correct": "C"
+            },
+            {
+                "quiz": "wrw",
+                "options": [
+                    "wre",
+                    "w",
+                    "tw",
+                    "wt"
+                ],
+                "correct": "D"
+            },
+            {
+                "quiz": "ewrq",
+                "options": [
+                    "qwr",
+                    "tw",
+                    "rq",
+                    "r"
+                ],
+                "correct": "A"
+            },
+            {
+                "quiz": "sduyw",
+                "options": [
+                    "eqwrh",
+                    "erneq",
+                    "wrtbt",
+                    "wegf"
+                ],
+                "correct": "A"
+            }
+        ]
+    }
+}
